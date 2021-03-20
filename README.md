@@ -3,16 +3,16 @@ python
 
 使用方法
 ===========
-一、安装Python Script 插件
-1.插件主页：https://github.com/bruderstein/PythonScript
-2.下载PythonScript_Full_1.5.4.0_x64.zip
-3.解压压缩包到C:\Program Files\Notepad++\plugins\PythonScript
-二、新建python脚本
+     一、安装Python Script 插件
+     1.插件主页：https://github.com/bruderstein/PythonScript
+     2.下载PythonScript_Full_1.5.4.0_x64.zip
+     3.解压压缩包到C:\Program Files\Notepad++\plugins\PythonScript
+    二、新建python脚本
       重启Notepad++
       Choose menu Plugins->Python Script->New script （选择插件>python 脚本>新建脚本）
 	  导入Convert to UCS-2 LE BOM.py
 	  或把文件移动到C:\Users\*****\AppData\Roaming\Notepad++\plugins\Config\PythonScript\scripts
-三、运行脚本
+     三、运行脚本
       重启Notepad++
 	  Choose menu Plugins->Python Script->勾选Show Console
 	  Choose menu Plugins->Python Script->Script->Convert to UCS-2 LE BOM
