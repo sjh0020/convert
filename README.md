@@ -10,12 +10,12 @@ python
     二、新建python脚本
       重启Notepad++
       Choose menu Plugins->Python Script->New script （选择插件>python 脚本>新建脚本）
-	  导入Convert to UCS-2 LE BOM.py
+	  导入Convert to UTF-16 LE BOM.py
 	  或把文件移动到C:\Users\*****\AppData\Roaming\Notepad++\plugins\Config\PythonScript\scripts
      三、运行脚本
       重启Notepad++
 	  Choose menu Plugins->Python Script->勾选Show Console
-	  Choose menu Plugins->Python Script->Script->Convert to UCS-2 LE BOM
+	  Choose menu Plugins->Python Script->Script->Convert to UTF-16 LE BOM
 
 注意事项
 ===========
@@ -23,6 +23,7 @@ python
     2.filePathSrc 路径中不能包含中文
     3.python不支持tab 和空格混用 缩进，所以最好是打开notepad++ 的 View–>Show Symbol->勾选Show White Space and TAB
     4.使用前请检查脚本运行的目标目录有对应格式文件
-    5.如果要转化为ANSI 就把下面UTF-8改为ANSI既可，说明一下下面的fn[-5:],指寻找后面5个字符匹配的路径后缀为.html 
-    6.如果你要匹配.cpp ，则应该是fn[-4:]
-    7.保存好的脚本文件不能再更改，否则会运行失败
+    5.如果要转化为ANSI 就把第11行即【notepad.runMenuCommand("Encoding", "Convert to UTF-16 LE BOM")】中UTF-16 LE BOM替换为ANSI即可，请确保转换的编码格式为muen中Ecoding含Convert的选项 
+    6.第9行中【fn[-3:] == '.ks'】指寻找后3个字符匹配路径后缀为.ks
+    7.如果你要匹配.cpp ，则应该是fn[-4:]
+    8.保存好的脚本文件不能再更改，否则会运行失败
