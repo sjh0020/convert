@@ -26,4 +26,3 @@ python
     5.如果要转化为ANSI 就把第11行即【notepad.runMenuCommand("Encoding", "Convert to UTF-16 LE BOM")】中UTF-16 LE BOM替换为ANSI即可，请确保转换的编码格式为muen中Ecoding含Convert的选项 
     6.第9行中【fn[-3:] == '.ks'】指寻找后3个字符匹配路径后缀为.ks
     7.如果你要匹配.cpp ，则应该是fn[-4:]
-    8.保存好的脚本文件不能再更改，否则会运行失败
