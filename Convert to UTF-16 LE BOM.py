@@ -10,5 +10,4 @@ for root, dirs, files in os.walk(filePathSrc):
               notepad.runMenuCommand("Encoding", "Convert to UTF-16 LE BOM")
               notepad.save()
               notepad.close()
-			  
 print "Convert to UTF-16 LE BOM Finish"
